@@ -22,31 +22,55 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: "Sedgwick Ave", cursive;
     font-weight: bold;
     font-style: normal;
 }
-header {
-    margin: 50px 0;
-}
+
 header h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--color);
+    height: 100%;
 }
+
 button {
     background: none;
     padding: 5px;
+    border: none;
+    border-radius: 5px;
 }
+.container {
+    margin: 5rem auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .keys {
+    width: 100px;
+    height: 100px;
     font-size: 3rem;
-    margin: auto 10px;
-    color: calc(var(--color) - var(--base));
+    text-align: center;
     transition: all 0.10s ease-in-out;
     padding: 10px;
-    border-radius: 10px;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+#a {background-image: url(./img/boom.svg);}
+#s {background-image: url(./img/clap.svg);}
+#d {background-image: url(./img/hihat.svg);}
+#f {background-image: url(./img/kick.svg);}
+#g {background-image: url(./img/openhat.svg);}
+#h {background-image: url(./img/ride.svg);}
+#j {background-image: url(./img/snare.svg);}
+#k {background-image: url(./img/tink.svg);}
+#l {background-image: url(./img/tom.svg);}
+
 .pressed {
     transform: scale(1.2);
 }
