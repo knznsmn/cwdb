@@ -53,7 +53,8 @@ button {
 .keys {
     width: 100px;
     height: 100px;
-    font-size: 3rem;
+    color: hsl(var(--hue), 100%, 90%);
+    font-size: 2rem;
     text-align: center;
     transition: all 0.10s ease-in-out;
     padding: 10px;

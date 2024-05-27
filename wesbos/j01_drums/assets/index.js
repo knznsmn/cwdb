@@ -1,78 +1,79 @@
 // Selectors
 const key = {
-    A: document.getElementById('a'),
-    S: document.getElementById('s'),
-    D: document.getElementById('d'),
-    F: document.getElementById('f'),
-    G: document.getElementById('g'),
-    H: document.getElementById('h'),
-    J: document.getElementById('j'),
-    K: document.getElementById('k'),
-    L: document.getElementById('l'),
+    a: document.getElementById('a'),
+    s: document.getElementById('s'),
+    d: document.getElementById('d'),
+    f: document.getElementById('f'),
+    g: document.getElementById('g'),
+    h: document.getElementById('h'),
+    j: document.getElementById('j'),
+    k: document.getElementById('k'),
+    l: document.getElementById('l'),
 }
 
 // Listeners
 document.addEventListener('keydown', (e) => {
-    let pressedKey = e.key.toUpperCase();
+    let pressedKey = e.key;
+    console.log(e.key);
     playSound(pressedKey);
 
 })
 
 function playSound(l) {
     switch (l) {
-        case 'A':
+        case 'a':
             const boom = new Audio('./assets/wav/boom.wav');
             boom.play();
-            key.A.classList.add('pressed');
-            setTimeout(function () { key.A.classList.remove('pressed'); }, 100);
+            key.a.classList.add('pressed');
+            setTimeout(function () { key.a.classList.remove('pressed'); }, 100);
             break;
-        case 'S':
+        case 's':
             const clap = new Audio('./assets/wav/clap.wav');
             clap.play();
-            key.S.classList.add('pressed');
-            setTimeout(function () { key.S.classList.remove('pressed'); }, 100);
+            key.s.classList.add('pressed');
+            setTimeout(function () { key.s.classList.remove('pressed'); }, 100);
             break;
-        case 'D':
+        case 'd':
             const hihat = new Audio('./assets/wav/hihat.wav');
             hihat.play();
-            key.D.classList.add('pressed');
-            setTimeout(function () { key.D.classList.remove('pressed'); }, 100);
+            key.d.classList.add('pressed');
+            setTimeout(function () { key.d.classList.remove('pressed'); }, 100);
             break;
-        case 'F':
+        case 'f':
             const kick = new Audio('./assets/wav/kick.wav');
             kick.play();
-            key.F.classList.add('pressed');
-            setTimeout(function () { key.F.classList.remove('pressed'); }, 100);
+            key.f.classList.add('pressed');
+            setTimeout(function () { key.f.classList.remove('pressed'); }, 100);
             break;
-        case 'G':
+        case 'g':
             const openhat = new Audio('./assets/wav/openhat.wav');
             openhat.play();
-            key.G.classList.add('pressed');
-            setTimeout(function () { key.G.classList.remove('pressed'); }, 100);
+            key.g.classList.add('pressed');
+            setTimeout(function () { key.g.classList.remove('pressed'); }, 100);
             break;
-        case 'H':
+        case 'h':
             const ride = new Audio('./assets/wav/ride.wav');
             ride.play();
-            key.H.classList.add('pressed');
-            setTimeout(function () { key.H.classList.remove('pressed'); }, 100);
+            key.h.classList.add('pressed');
+            setTimeout(function () { key.h.classList.remove('pressed'); }, 100);
             break;
-        case 'J':
+        case 'j':
             const snare = new Audio('./assets/wav/snare.wav');
             snare.play();
-            key.J.classList.add('pressed');
-            setTimeout(function () { key.J.classList.remove('pressed'); }, 100);
+            key.j.classList.add('pressed');
+            setTimeout(function () { key.j.classList.remove('pressed'); }, 100);
             break;
-        case 'K':
+        case 'k':
             const tink = new Audio('./assets/wav/tink.wav');
             tink.play();
-            key.K.classList.add('pressed');
-            setTimeout(function () { key.K.classList.remove('pressed'); }, 100);
+            key.k.classList.add('pressed');
+            setTimeout(function () { key.k.classList.remove('pressed'); }, 100);
             break;
-        case 'L':
+        case 'l':
             const tom = new Audio('./assets/wav/tom.wav');
             tom.play();
-            key.L.classList.toggle('pressed');
-            setTimeout(function () { key.L.classList.remove('pressed'); }, 100);
+            key.l.classList.toggle('pressed');
+            setTimeout(function () { key.l.classList.remove('pressed'); }, 100);
             break;
     }
 }
