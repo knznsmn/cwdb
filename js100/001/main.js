@@ -10,15 +10,29 @@ const quotations = [
 {
 	author: 'Albert Einstein',
 	quote: 'Tiktok is stupid.',
-	img: 'https://www.github.com/knznsmn.png',
+	cite: 'Science Toilet',
 },
 {
 	author: 'Julius Cesar',
 	quote: 'Indeed, Tiktok is stupid.',
-	img: 'https://www.github.com/jccreatifs',
+	cite: 'Adventures, Really',
 },
 ]
 // Function Hall
 
+function updateQuotes() {
+	
+	let i = 0;
+	const {author, quote, cite} = quotations[i];
+	
+	_.quote.innerHTML = quote;
+	// _.cite.innerText = cite;
+	_.author.innerHTML = `&mdash;${author}, <cite>${cite}</cite>`;
+	
+	i++;
+	if (i > quotations.length) {
+		i = 0;
+	}
+}
 // main()
-_.blockquote.innerHTML = 'Weye';
+updateQuotes();
