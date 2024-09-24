@@ -1,0 +1,90 @@
+* {
+  margin: 10px;
+  /* background-color: black; */
+}
+
+#home {
+  margin: -1px -1px 2cm -1px;
+  background-color: blue;
+}
+
+#home header {
+  font-size: 30px;
+  color: purple;
+  float: left;
+  padding-left: 2cm;
+}
+
+#home nav {
+  float: right;
+  padding-right: 1cm;
+}
+
+#home button {
+  color: lightgray;
+  background-color: darkmagenta;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 1mm;
+  font-size: 20px;
+}
+
+#home button:hover {
+  color: white;
+  background-color: purple;
+}
+
+section {
+  display: grid;
+  justify-content: center;
+}
+
+figure {
+  float: left;
+  text-align: left;
+  width: 200px;
+}
+
+figure img {
+  width: 200px;
+}
+
+figure figcaption {
+  font-size: 17px;
+  color: black;
+  text-align: center;
+}
+
+fieldset button {
+  font-size: 20px;
+  border-color: transparent;
+  background-color: lightgreen;
+  padding: 0 15px;
+}
+
+fieldset button:hover {
+  cursor: pointer;
+}
+
+b {
+  border-top: 20px solid;
+  border-radius: 10px;
+  background-color: white;
+  width: 600px;
+  height: 400px;
+  margin: 25px 0;
+  display: flex;
+}
+
+.temperature{
+    border-top-color: green;
+}
+.weight{
+    border-top-color: coral;
+}
+.distance{
+    border-top-color: cyan;
+}
+legend {
+    font-size: 30px;
+    font-weight: bolder;
