@@ -1,2 +1,3 @@
-# pratiques
-TC2024WDB Projects 
+# The Complete Full-Stack Web Development
+
+Notes for learning web Development
