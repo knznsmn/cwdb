@@ -1,0 +1,27 @@
+/* Write your code here: */
+
+h1 {
+  color: blueviolet;
+}
+h2 {
+  color: violet
+}
+p {
+  color: purple
+}
+
+ul p.done {
+  color: red;
+}
+.list {
+  color: lightseagreen;
+}
+.done {
+  color: blue;
+}
+.box p {
+  color: lightcoral
+}
+.box li {
+  list-style: symbols(':');
+}
